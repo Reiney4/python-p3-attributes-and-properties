@@ -25,21 +25,16 @@ class Person:
 
     def set_name(self,name):
         if isinstance (name, str) and (1 <=len(name)<= 25):
-
-            self._name = name.title()
+          self._name = name.title()
         else:
             print("Name must be string under 25 characters.")
     def get_name(self):
         return self._name
     name =property(get_name,set_name)
         
-       
-    
-
-
     def set_job(self,job):
         if job  in APPROVED_JOBS:
-            self._=job
+            self._job=job
         else:
             print(  "Job must be in list of approved jobs." )
     def get_job(self):
