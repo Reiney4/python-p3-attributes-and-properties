@@ -27,7 +27,7 @@ class Person:
         if isinstance (name, str) and (1 <=len(name)<= 25):
           self._name = name.title()
         else:
-            print("Name must be string under 25 characters.")
+            print("Name must be string between 1 and 25 characters.")
     def get_name(self):
         return self._name
     name =property(get_name,set_name)
